@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="bt_select" id="0x7f020001" />
+    <public type="drawable" name="icon" id="0x7f020009" />
+    <public type="drawable" name="bg_icon" id="0x7f020000" />
+    <public type="drawable" name="editgroup_item_bg" id="0x7f020002" />
+    <public type="drawable" name="focusing" id="0x7f020003" />
+    <public type="drawable" name="frame_bg" id="0x7f020004" />
+    <public type="drawable" name="ic_wifi_lock_signal_1" id="0x7f020005" />
+    <public type="drawable" name="ic_wifi_lock_signal_2" id="0x7f020006" />
+    <public type="drawable" name="ic_wifi_lock_signal_3" id="0x7f020007" />
+    <public type="drawable" name="ic_wifi_lock_signal_4" id="0x7f020008" />
+    <public type="drawable" name="image_viewer_btn_bg_nor" id="0x7f02000a" />
+    <public type="drawable" name="image_viewer_btn_bg_press" id="0x7f02000b" />
+    <public type="layout" name="activity_crack" id="0x7f030000" />
+    <public type="layout" name="activity_dialog" id="0x7f030001" />
+    <public type="layout" name="activity_main" id="0x7f030002" />
+    <public type="layout" name="show_text" id="0x7f030003" />
+    <public type="layout" name="wifi_item" id="0x7f030004" />
+    <public type="layout" name="wifi_list_item" id="0x7f030005" />
+    <public type="string" name="app_name" id="0x7f040000" />
+    <public type="string" name="title_activity_main" id="0x7f040001" />
+    <public type="string" name="crack" id="0x7f040002" />
+    <public type="string" name="scan" id="0x7f040003" />
+    <public type="string" name="crack_1" id="0x7f040004" />
+    <public type="string" name="crack_2" id="0x7f040005" />
+
+    <public type="id" name="wifi_item" id="0x7f060000" />
+    <public type="id" name="menu" id="0x7f060001" />
+    <public type="id" name="bt_crack1" id="0x7f060002" />
+    <public type="id" name="bt_crack2" id="0x7f060003" />
+    <public type="id" name="show_list" id="0x7f060004" />
+    <public type="id" name="name" id="0x7f060005" />
+    <public type="id" name="pass" id="0x7f060006" />
+    <public type="id" name="bt_scan" id="0x7f060007" />
+    <public type="id" name="bt_crack" id="0x7f060008" />
+    <public type="id" name="wifi_list" id="0x7f060009" />
+    <public type="id" name="wifi_level" id="0x7f06000a" />
+    <public type="id" name="wifi_name" id="0x7f06000b" />
+    <public type="id" name="wifi_focusing" id="0x7f06000c" />
+</resources>

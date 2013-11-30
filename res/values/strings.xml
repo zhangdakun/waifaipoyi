@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">wifi破解</string>
+    <string name="title_activity_main">wifi破解</string>
+    <string name="crack">破解</string>
+    <string name="scan">搜索附近wifi</string>
+    <string name="crack_1">普通</string>
+    <string name="crack_2">强力解密</string>
+    <string name="crack_ok">联网成功</string>
+    <string name="other">积分</string>
+    <string name="more">更多</string>
+    <string name="todo">开始吧</string>
+    <string name="pojie">选择wifi去破解吧</string>
+    <string name="menu_settings">推荐</string>
+    <string name="searching">正在搜寻可用wifi...</string>
+</resources>

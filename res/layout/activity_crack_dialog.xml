@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textViewcrackdialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@anim/animprogress" />
+        
+            <ImageView
+        android:id="@+id/imageView1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+        android:src="@drawable/work" />
+            
+        
+    <Button
+        android:id="@+id/fastcrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginTop="27dp"
+        android:onClick="onbtnclick"
+        android:text="@string/crack_1" />
+
+    <Button
+        android:id="@+id/goodcrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fastcrack"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/fastcrack"
+        android:onClick="onbtnclick"
+        android:text="@string/crack_2" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="wifi_item">false</item>
+    <item type="id" name="menu">false</item>
+    <item type="id" name="bt_crack1">false</item>
+    <item type="id" name="bt_crack2">false</item>
+    <item type="id" name="show_list">false</item>
+    <item type="id" name="name">false</item>
+    <item type="id" name="pass">false</item>
+    <item type="id" name="bt_scan">false</item>
+    <item type="id" name="bt_crack">false</item>
+    <item type="id" name="wifi_list">false</item>
+    <item type="id" name="wifi_level">false</item>
+    <item type="id" name="wifi_name">false</item>
+    <item type="id" name="wifi_focusing">false</item>
+</resources>

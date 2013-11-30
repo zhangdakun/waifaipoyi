@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.mywifi02.parser"
+    android:versionCode="8"
+    android:versionName="4.11.04" >
+
+    <!-- 有米传媒 Android SDK 所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 可选 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- /有米传媒 Android SDK 所需权限 -->
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.oba.wificrack.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+                        <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+      
+
+
+        <activity
+            android:name="com.oba.wificrack.CrackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.oba.wificrack.DialogActivity"
+            android:label="@string/app_name"
+            android:theme="@style/dialog2" />
+        <activity
+            android:name="com.oba.wificrack.DialogCrackActivity"
+            android:label="@string/app_name"
+            android:theme="@style/dialog" />
+
+        <!-- 有米传媒 Android SDK 配置(可直接复制节点) -->
+        <!-- SDK 必须配置 -->
+        <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name="net.youmi.android.AdReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- /SDK 必须配置 -->
+        <!-- 积分广告必须配置 -->
+        <receiver
+            android:name="net.youmi.android.offers.OffersReceiver"
+            android:exported="false" >
+        </receiver>
+        <!-- ／积分广告必须配置 -->
+        <!-- 有米渠道号(可选配置) 渠道号不能带空格，类型为整数 -->
+        <meta-data
+            android:name="YOUMI_CHANNEL"
+            android:value="10120" >
+        </meta-data>
+        <!-- /有米渠道号(可选配置) -->
+        <!-- /有米传媒 Android SDK 配置 -->
+    </application>
+
+</manifest>

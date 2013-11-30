@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/frame_bg" >
+
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal" >
+    </LinearLayout>
+
+    <com.oba.wificrack.SearchAnimationWidget
+        android:id="@+id/wt_radar_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:id="@id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2.0" >
+
+        <Button
+            android:id="@id/bt_scan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bt_select"
+            android:gravity="center"
+            android:shadowColor="#ff7e7e7e"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="1.0"
+            android:text="@string/scan"
+            android:textColor="#ffe7ffff"
+            android:textSize="25.0dip"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@id/bt_crack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bt_select"
+            android:gravity="center"
+            android:shadowColor="#ff7e7e7e"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="1.0"
+            android:text="@string/crack"
+            android:textColor="#ffe7ffff"
+            android:textSize="25.0dip"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/wt_myDeviceIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            
+            android:background="@drawable/wifi_bottom_menu_btn_selector"
+            android:clickable="true"
+            android:onClick="onSearchDevice" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:onClick="onSearchDevice"
+            android:visibility="gone"
+            android:text="@string/scan" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:visibility="gone"
+            android:text="@string/pojie" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/menu"
+        android:layout_below="@id/adLayout" >
+
+        <ListView
+            android:id="@id/wifi_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/editgroup_item_bg"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/gridView_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/other"
+            android:numColumns="3" >
+        </GridView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bt_select"
+            android:gravity="center"
+            android:onClick="onSearchonther"
+            android:shadowColor="#ff7e7e7e"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:visibility="gone"
+            android:shadowRadius="1.0"
+            android:text="@string/crack"
+            android:textColor="#ffe7ffff"
+            android:textSize="25.0dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

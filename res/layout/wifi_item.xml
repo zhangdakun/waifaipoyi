@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/editgroup_item_bg"
+    android:minHeight="45.0dip" >
+
+    <ImageView
+        android:id="@id/wifi_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_wifi_lock_signal_1" />
+
+    <TextView
+        android:id="@id/wifi_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/wifi_level"
+        android:lines="1"
+        android:textColor="#ff000000"
+        android:textSize="20.0dip" />
+
+    <ImageView
+        android:id="@id/wifi_focusing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/focusing"
+        android:visibility="gone" />
+
+</RelativeLayout>

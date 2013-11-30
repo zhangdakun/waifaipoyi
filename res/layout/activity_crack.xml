@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/frame_bg" >
+            <LinearLayout
+        android:id="@+id/adLayoutcrack"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal" >
+    </LinearLayout>
+
+    <include
+        android:id="@id/wifi_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adLayoutcrack"
+        layout="@layout/wifi_item" />
+
+    <LinearLayout
+        android:id="@id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2.0" >
+
+        <Button
+            android:id="@id/bt_crack1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bt_select"
+            android:gravity="center"
+            android:shadowColor="#ff7e7e7e"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="1.0"
+            android:text="@string/crack_1"
+            android:textColor="#ffe7ffff"
+            android:textSize="25.0dip"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@id/bt_crack2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bt_select"
+            android:gravity="center"
+            android:shadowColor="#ff7e7e7e"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="1.0"
+            android:text="@string/crack_2"
+            android:textColor="#ffe7ffff"
+            android:textSize="25.0dip"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/show_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/menu"
+        android:layout_below="@id/wifi_item"
+        android:orientation="vertical" />
+
+</RelativeLayout>

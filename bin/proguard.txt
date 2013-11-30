@@ -1,0 +1,38 @@
+# view AndroidManifest.xml #generated:56
+-keep class com.oba.wificrack.CrackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.oba.wificrack.DialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.oba.wificrack.DialogCrackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.oba.wificrack.MainActivity { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:15
+-keep class com.oba.wificrack.SearchAnimationWidget { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class net.youmi.android.AdBrowser { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class net.youmi.android.AdReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class net.youmi.android.AdService { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class net.youmi.android.offers.OffersReceiver { <init>(...); }
+
+# onClick res/layout/activity_main.xml #generated:68
+# onClick res/layout/activity_main.xml #generated:79
+-keepclassmembers class * { *** onSearchDevice(...); }
+
+# onClick res/layout/activity_main.xml #generated:128
+-keepclassmembers class * { *** onSearchonther(...); }
+
+# onClick res/layout/activity_crack_dialog.xml #generated:32
+# onClick res/layout/activity_crack_dialog.xml #generated:42
+-keepclassmembers class * { *** onbtnclick(...); }
+
